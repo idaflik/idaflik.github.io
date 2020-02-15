@@ -17,6 +17,12 @@ text-align: left;
 font-size: 26px;
     }
 
+a {
+  text-decoration: none;
+  margin-bottom: 1em;
+  display: block;
+}
+
 ::selection {
   background: #f94e04;
   color: white;
@@ -36,6 +42,7 @@ h1, h2, h3, h4, h5, p, a, ul, li {
   margin: 0px;
   margin-bottom:1em;
 }
+
 
 .left {
   float:left;
@@ -62,6 +69,7 @@ li::before {
 
 li > a {
   text-decoration: none;
+  display: inline;
 }
 
 li {
@@ -133,4 +141,5 @@ p > a, h5 > a {
   color: #f94e04;
   text-decoration: underline;
   margin-bottom: 0px;
+  display: inline;
 }
