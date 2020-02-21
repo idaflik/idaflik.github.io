@@ -72,13 +72,19 @@ li > a {
   display: inline;
 }
 
+a:hover {
+  color: #f94e04;
+  text-decoration: none;
+}
+
 li {
   margin-bottom:1em;
   text-decoration: none;
 }
 
 li:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #f94e04;
 }
 
 hr {
@@ -138,7 +144,7 @@ img {
 }
 
 p > a, h5 > a {
-  color: #f94e04;
+  /* color: #f94e04; */
   text-decoration: underline;
   margin-bottom: 0px;
   display: inline;
