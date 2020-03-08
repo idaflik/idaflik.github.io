@@ -23,6 +23,12 @@ a {
   display: block;
 }
 
+
+.externalLink::after {
+  content: "🡭";
+}
+
+
 ::selection {
   background: #f94e04;
   color: white;
