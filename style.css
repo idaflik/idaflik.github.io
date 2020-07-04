@@ -27,6 +27,8 @@ a {
 
 
 .externalLink::after {
+  font-family: arial;
+  font-weight: 100;
   content: "🡭";
 }
 
@@ -123,6 +125,14 @@ iframe {
   width: 50%;
   height: 100vh;
   border: none;
+}
+
+.vimeo {
+  position: static;
+  margin: none;
+  border: none;
+  width: 97.5vw;
+  height: 54.5vw;
 }
 
 @media (max-width: 768px) {
