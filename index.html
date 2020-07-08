@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
   <link rel="prefetch" href="tacticaltech-annual-report.png">
   <link rel="prefetch" href="altona.png">
+  <link rel="prefetch" href="algae.jpg">
   <link rel="prefetch" href="https://burg-halle.de/poweredbyalgae/e10.gif">
   <link rel="prefetch" href="data-clocks.png">
   <link rel="prefetch" href="coffee-animation.gif">
@@ -45,6 +46,7 @@
 
   <link rel="prerender" href="tacticaltech-annual-report.png">
   <link rel="prerender" href="altona.png">
+  <link rel="prerender" href="algae.jpg">
   <link rel="prerender" href="https://burg-halle.de/poweredbyalgae/e10.gif">
   <link rel="prerender" href="data-clocks.png">
   <link rel="prerender" href="coffee-animation.gif">
@@ -236,6 +238,10 @@
                 var imageUrl ="lintotten.png";
                 $(".box").css("background-image", "url(" + imageUrl + ")");
             });
+            $("#algae2").mouseenter(function() {
+                var imageUrl ="algae.jpg";
+                $(".box").css("background-image", "url(" + imageUrl + ")");
+            });
 
 
             $("li").mouseleave(function() {
@@ -283,7 +289,7 @@
 			<ul>
         <li id="horoscope"><a href="./horoscope/index.html">Weather Horoscope</a></li>
 				<li id="altona"><a href="./altona/index.html">Living and Urban Planning in Altona</a></li>
-        <li id="algae"><a href="./algae/index.html">A Future Powered by Algae? — exhibition</a></li>
+        <li id="algae2"><a href="./algae/index.html">A Future Powered by Algae? — exhibition</a></li>
 				<!-- <li id="credi"><a href="./credi-expo/index.html">Vallée du Sitatunga</a></li> -->
 				<li id="kinderkisten"><a href="./kinderkisten/index.html">History for Kids</a></li>
 				</ul>
