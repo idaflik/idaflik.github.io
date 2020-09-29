@@ -135,9 +135,9 @@ iframe {
   height: 54.5vw;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-device-width: 480px) {
     .box {
-        display: none;
+    display: none;
     }
     iframe {
       position: static;
@@ -145,10 +145,10 @@ iframe {
       float: none;
       overflow-y: visible;
     }
-    .mobile-only {
+    /* .mobile-only {
       display: block;
       width: 100%;
-    }
+    } */
     #content {
         padding: 10%;
         width: 80%;
