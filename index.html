@@ -43,6 +43,7 @@
   <link rel="prefetch" href="alumni.png">
   <link rel="prefetch" href="lintotten.png">
   <link rel="prefetch" href="schweine.png">
+  <link rel="prefetch" href="biden-trump.png">
 
 
   <link rel="prerender" href="tacticaltech-annual-report.png">
@@ -84,6 +85,7 @@
   <link rel="prerender" href="alumni.png">
   <link rel="prerender" href="lintotten.png">
   <link rel="prerender" href="schweine.png">
+  <link rel="prerender" href="biden-trump.png">
 
 	<title>portfolio — ida flik</title>
 
@@ -252,6 +254,10 @@
                 var imageUrl ="unbias-the-news.png";
                 $(".box").css("background-image", "url(" + imageUrl + ")");
             });
+            $("#biden-trump").mouseenter(function() {
+                var imageUrl ="biden-trump.png";
+                $(".box").css("background-image", "url(" + imageUrl + ")");
+            });
 
 
             $("li").mouseleave(function() {
@@ -273,8 +279,9 @@
 
 			<h2> data visualization + journalism</h2>
 			<ul>
-				<li id="tacticaltech-annual-report"><a  href="./tacticaltech-annual-report/index.html">A Year in Data</a></li>
+				<li id="biden-trump"><a class="externalLink" target="_blank" href="https://interaktiv.wp.de/us-wahl-2020-donald-trump-joe-biden-wahlsystem/">US presidential elections explained (DE</a> / <a class="externalLink" target="_blank" href="https://interaktiv.wp.de/us-election-2020-donald-trump-joe-biden-electors-english/">EN</a>)</li>
         <li id="ost-west"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/deutschland-teilen-deutsche-einheit-wiedervereinigung/">Ost-West? Nord-Süd? Oder ganz anders?</a></li>
+        <li id="tacticaltech-annual-report"><a  href="./tacticaltech-annual-report/index.html">A Year in Data</a></li>
         <li id="SAR"><a class="externalLink" target="_blank" href="https://idaflik.github.io/SAR/">Civil Sea Rescuing in the Mediterranean</a></li>
         <li id="lintotten"><a class="externalLink" target="_blank" href="https://idaflik.github.io/lintotten/">Renovations and Rent Increases</a></li>
         <li id="rechter-terror"><a class="externalLink" target="_blank" href="https://idaflik.github.io/rechter-terror/">Right-wing terrorism in Germany</a></li>
