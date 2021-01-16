@@ -5,6 +5,7 @@
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
   <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+  <link rel="prefetch" href="excess-deaths.png">
   <link rel="prefetch" href="tacticaltech-annual-report.png">
   <link rel="prefetch" href="altona.png">
   <link rel="prefetch" href="algae.jpg">
@@ -49,6 +50,7 @@
   <link rel="prefetch" href="tempelhof.png">
 
 
+  <link rel="prerender" href="excess-deaths.png">
   <link rel="prerender" href="tacticaltech-annual-report.png">
   <link rel="prerender" href="altona.png">
   <link rel="prerender" href="algae.jpg">
@@ -277,6 +279,10 @@
                 var imageUrl ="tempelhof.png";
                 $(".box").css("background-image", "url(" + imageUrl + ")");
             });
+            $("#excess-deaths").mouseenter(function() {
+                var imageUrl ="excess-deaths.png";
+                $(".box").css("background-image", "url(" + imageUrl + ")");
+            });
 
 
             $("li").mouseleave(function() {
@@ -298,7 +304,8 @@
 
 			<h2> data visualization + journalism</h2>
 			<ul>
-				<li id="gerrymandering"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/us-wahl-2020-gerrymandering/">Gerrymandering (DE</a> / <a class="externalLink" target="_blank" href="https://interaktiv.waz.de/us-wahl-2020-gerrymandering-english/">EN</a>)</li>
+				<li id="excess-deaths"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/corona-uebersterblichkeit-sterberate-deutschland/">Covid and Excess Deaths 2020</a></li>
+        <li id="gerrymandering"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/us-wahl-2020-gerrymandering/">Gerrymandering (DE</a> / <a class="externalLink" target="_blank" href="https://interaktiv.waz.de/us-wahl-2020-gerrymandering-english/">EN</a>)</li>
         <li id="biden-trump"><a class="externalLink" target="_blank" href="https://interaktiv.nrz.de/us-wahl-2020-donald-trump-joe-biden-wahlsystem/">US presidential elections explained (DE</a> / <a class="externalLink" target="_blank" href="https://interaktiv.nrz.de/us-election-2020-donald-trump-joe-biden-electors-english/">EN</a>)</li>
         <li id="ost-west"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/deutschland-teilen-deutsche-einheit-wiedervereinigung/">Ost-West? Nord-Süd? Oder ganz anders?</a></li>
         <li id="tacticaltech-annual-report"><a  href="./tacticaltech-annual-report/index.html">A Year in Data</a></li>
