@@ -16,6 +16,7 @@
   <link rel="prefetch" href="gerrymandering.png">
   <link rel="prefetch" href="gendergap.png">
   <link rel="prefetch" href="fukushima.png">
+  <link rel="prefetch" href="wald.png">
 
   <link rel="prerender" href="fukushima.png">
   <link rel="prerender" href="excess-deaths.png">
@@ -28,6 +29,7 @@
   <link rel="prerender" href="biden-trump.png">
   <link rel="prerender" href="gerrymandering.png">
   <link rel="prerender" href="gendergap.png">
+  <link rel="prerender" href="wald.png">
 
 
 
@@ -238,6 +240,10 @@
                 var imageUrl ="fukushima.png";
                 $(".box").css("background-image", "url(" + imageUrl + ")");
             });
+            $("#wald").mouseenter(function() {
+                var imageUrl ="wald.png";
+                $(".box").css("background-image", "url(" + imageUrl + ")");
+            });
 
 
             $("li").mouseleave(function() {
@@ -261,6 +267,7 @@
 			<ul>
 				<li id="gendergap"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/frauentag-weltfrauentag-tag-der-frau-internationaler-frauen-kampf-tag-2021/">Inequality in numbers</a></li>
         <li id="fukushima"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/fukushima-atomkraftwerke-atomausstieg-deutschland/">10 years after Fukushima</a></li>
+        <li id="wald"><a class="externalLink" target="_blank" href="https://interaktiv.nrz.de/waldsterben-klimawandel-borkenkaefer-hitze-duerre-co2-rechner/">Forests and climate change</a></li>
         <li id="excess-deaths"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/corona-uebersterblichkeit-sterberate-deutschland/">Covid and Excess Deaths 2020</a></li>
         <!-- <li id="gerrymandering"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/us-wahl-2020-gerrymandering/">Gerrymandering (DE</a> / <a class="externalLink" target="_blank" href="https://interaktiv.waz.de/us-wahl-2020-gerrymandering-english/">EN</a>)</li> -->
         <!-- <li id="biden-trump"><a class="externalLink" target="_blank" href="https://interaktiv.nrz.de/us-wahl-2020-donald-trump-joe-biden-wahlsystem/">US presidential elections explained (DE</a> / <a class="externalLink" target="_blank" href="https://interaktiv.nrz.de/us-election-2020-donald-trump-joe-biden-electors-english/">EN</a>)</li> -->
