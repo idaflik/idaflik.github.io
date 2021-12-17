@@ -5,6 +5,7 @@
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
   <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+    <link rel="prefetch" href="bundestag.png">
   <link rel="prefetch" href="excess-deaths.png">
   <link rel="prefetch" href="rechter-terror.png">
   <link rel="prefetch" href="SAR.png">
@@ -19,6 +20,7 @@
   <link rel="prefetch" href="wald.png">
   <link rel="prefetch" href="visas.png">
 
+  <link rel="prerender" href="bundestag.png">
   <link rel="prerender" href="fukushima.png">
   <link rel="prerender" href="excess-deaths.png">
   <link rel="prerender" href="rechter-terror.png">
@@ -266,6 +268,10 @@
                 var imageUrl ="transitions-website.png";
                 $(".box").css("background-image", "url(" + imageUrl + ")");
             });
+            $("#bundestag").mouseenter(function() {
+                var imageUrl ="bundestag.png";
+                $(".box").css("background-image", "url(" + imageUrl + ")");
+            });
 
 
             $("li").mouseleave(function() {
@@ -287,8 +293,9 @@
 
 			<h2> data visualization + journalism</h2>
 			<ul>
-				<li id="elections"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/bundestagswahl-2021-umfragen-ergebnisse-wahlkarte/">Election Dashboards</a></li>
+        <li id="bundestag"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/neuer-bundestag-2021-bundestagswahl-abgeordnete-parlament/">The German parliament and representation</a></li>
         <li id="merkel"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/angela-merkel-in-zahlen-bundestagswahl-2021/">Die Ära Merkel in Zahlen</a></li>
+  			<li id="elections"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/bundestagswahl-2021-umfragen-ergebnisse-wahlkarte/">Election Dashboards</a></li>
         <li id="gendergap"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/frauentag-weltfrauentag-tag-der-frau-internationaler-frauen-kampf-tag-2021/">Inequality in numbers</a></li>
         <li id="fukushima"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/fukushima-atomkraftwerke-atomausstieg-deutschland/">10 years after Fukushima</a></li>
         <li id="ost-west"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/deutschland-teilen-deutsche-einheit-wiedervereinigung/">Ost-West? Nord-Süd? Oder ganz anders?</a></li>
