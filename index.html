@@ -6,7 +6,8 @@
 
   <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
     <link rel="prefetch" href="bundestag.png">
-  <link rel="prefetch" href="excess-deaths.png">
+    <link rel="prefetch" href="unbewohnbar.png">
+    <link rel="prefetch" href="excess-deaths.png">
   <link rel="prefetch" href="rechter-terror.png">
   <link rel="prefetch" href="SAR.png">
   <link rel="prefetch" href="police.png">
@@ -21,6 +22,7 @@
   <link rel="prefetch" href="visas.png">
 
   <link rel="prerender" href="bundestag.png">
+    <link rel="prerender" href="unbewohnbar.png">
   <link rel="prerender" href="fukushima.png">
   <link rel="prerender" href="excess-deaths.png">
   <link rel="prerender" href="rechter-terror.png">
@@ -272,6 +274,10 @@
                 var imageUrl ="bundestag.png";
                 $(".box").css("background-image", "url(" + imageUrl + ")");
             });
+            $("#unbewohnbar").mouseenter(function() {
+                var imageUrl ="unbewohnbar.png";
+                $(".box").css("background-image", "url(" + imageUrl + ")");
+            });
 
 
             $("li").mouseleave(function() {
@@ -293,6 +299,7 @@
 
 			<h2> data visualization + journalism</h2>
 			<ul>
+        <li id="unbewohnbar"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/klimawandel-hitze-meeresspiegel-wassermangel-stuerme-unbewohnbar/">Future uninhabitable places</a></li>
         <li id="bundestag"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/neuer-bundestag-2021-bundestagswahl-abgeordnete-parlament/">The German parliament and representation</a></li>
         <li id="merkel"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/angela-merkel-in-zahlen-bundestagswahl-2021/">Die Ära Merkel in Zahlen</a></li>
   			<li id="elections"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/bundestagswahl-2021-umfragen-ergebnisse-wahlkarte/">Election Dashboards</a></li>
