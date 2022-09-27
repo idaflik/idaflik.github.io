@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
     <link rel="prefetch" href="bundestag.png">
+      <link rel="prefetch" href="inflation.png">
     <link rel="prefetch" href="unbewohnbar.png">
     <link rel="prefetch" href="excess-deaths.png">
   <link rel="prefetch" href="rechter-terror.png">
@@ -23,6 +24,7 @@
   <link rel="prefetch" href="visas.png">
 
   <link rel="prerender" href="bundestag.png">
+    <link rel="prerender" href="inflation.png">
     <link rel="prerender" href="unbewohnbar.png">
   <link rel="prerender" href="fukushima.png">
   <link rel="prerender" href="excess-deaths.png">
@@ -292,7 +294,10 @@
                 var imageUrl ="es-postcards.png";
                 $(".box").css("background-image", "url(" + imageUrl + ")");
             });
-
+            $("#inflation").mouseenter(function() {
+                var imageUrl ="inflation.png";
+                $(".box").css("background-image", "url(" + imageUrl + ")");
+            });
 
 
 
@@ -317,6 +322,7 @@
 			<ul>
         <li id="unbewohnbar"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/klimawandel-hitze-meeresspiegel-wassermangel-stuerme-unbewohnbar/">Future uninhabitable places</a></li>
         <li id="9euro"><a class="externalLink" target="_blank" href="https://interaktiv.waz.de/9-Euro-Ticket-Bahn-Reiseziel-Karte-Streckenplaner-ab-NRW/">9-Euro ticket routes</a></li>
+        <li id="inflation"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/inflation-rechner-einkommen-preise/">Whom inflation hits hardest</a></li>
         <li id="climate-stripes"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/hitze-faecher-klimastreifen-staedte-deutschland/">Local climate stripes (and how to fold a fan)</a></li>
         <li id="gendergap"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/frauentag-weltfrauentag-tag-der-frau-internationaler-frauen-kampf-tag-2021/">Inequality in numbers</a></li>
         <li id="merkel"><a class="externalLink" target="_blank" href="https://interaktiv.morgenpost.de/angela-merkel-in-zahlen-bundestagswahl-2021/">Die Ära Merkel in Zahlen</a></li>
@@ -379,7 +385,7 @@
 				<li id="invision"><a href="./in-vision/index.html">In*vision Festival</a></li>
         <li id="media-power"><a href="./media-and-power/index.html">Media & Power Lecture Series</a></li>
         <li id="swift"><a href="./swift/index.html">Swift</a></li>
-				<!-- <li id="play"><a href="./play/index.html">The Magic of Play</a></li> 
+				<!-- <li id="play"><a href="./play/index.html">The Magic of Play</a></li>
 				<li id="abc"><a href="./abecedarium/index.html">Typographic Experiments</a></li>
 				 <li id="schneesuechtig"><a href="./schneesuechtig/index.html">Schneesüchtig Flyer</a></li> -->
 				</ul>
