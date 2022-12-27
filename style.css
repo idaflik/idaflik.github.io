@@ -195,4 +195,7 @@ li > .externalLink::after {
   h2 {
     margin-top: 0.5em;
   }
+iframe {
+  height: 1000vh;
+}
   };
