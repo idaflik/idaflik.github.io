@@ -289,8 +289,11 @@
                 var imageUrl ="knicker1.png";
                 $(".box").css("background-image", "url(" + imageUrl + ")");
             });
-
-
+            $("#ap-scrapbook").mouseenter(function() {
+                var imageUrl ="ap-scrapbook.png";
+                $(".box").css("background-image", "url(" + imageUrl + ")");
+            });
+            
             $("li").mouseleave(function() {
               $(".box").css("background-image", "none");
             });
@@ -375,7 +378,8 @@
 
 			<h2>layout</h2>
 			<ul>
-        <li id="just-transition"><a href="./just-transition/index.html">Just Transition Training Manual</a></li>
+        <li id="ap-scrapbook"><a href="./ap-scrapbook/index.html">AP Scrapbook</a></li>
+				<li id="just-transition"><a href="./just-transition/index.html">Just Transition Training Manual</a></li>
 				<li id="transitions"><a href="./transitions/index.html">TRANSITIONS Festival</a></li>
 				<li id="kcmm"><a href="./kcmm/index.html">KidsCourage Handbook</a></li>
         <li id="dna"><a href="./dna/index.html">Data & Activism Activity Book</a></li>
