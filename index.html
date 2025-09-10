@@ -6,7 +6,6 @@
 
     <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
     <link rel="prefetch" href="unbewohnbar.png" />
-
     <link rel="prerender" href="unbewohnbar.png" />
 
     <title>portfolio — ida flik</title>
@@ -234,6 +233,10 @@
           var imageUrl = "illustrations.png";
           $(".box").css("background-image", "url(" + imageUrl + ")");
         });
+        $("#frontex-grants").mouseenter(function () {
+          var imageUrl = "frontex-grants.gif";
+          $(".box").css("background-image", "url(" + imageUrl + ")");
+        });
         $("li").mouseleave(function () {
           $(".box").css("background-image", "none");
         });
@@ -258,6 +261,14 @@
                 >Future uninhabitable places</a
               >
             </li>
+            <li id="frontex-grants">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://www.statewatch.org/analyses/2025/2-billion-in-15-years-how-frontex-finances-fortress-europe/"
+                >How Frontex finances Fortress Europe</a
+              >
+            </li>
             <li id="co2blocks">
               <a
                 class="externalLink"
@@ -271,7 +282,7 @@
                 class="externalLink"
                 target="_blank"
                 href="https://www.statewatch.org/analyses/2025/frontex-and-deportation-charter-flights-2006-2024/"
-                >Frontex deportations</a
+                >Deportation Union</a
               >
             </li>
             <li id="sis-denial">
