@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
 
     <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
-    <link rel="prefetch" href="unbewohnbar.png" />
-    <link rel="prerender" href="unbewohnbar.png" />
+    <link rel="prefetch" href="greenwave.gif" />
+    <link rel="prerender" href="greenwave.gif" />
 
     <title>portfolio — ida flik</title>
 
@@ -237,6 +237,10 @@
           var imageUrl = "frontex-grants.gif";
           $(".box").css("background-image", "url(" + imageUrl + ")");
         });
+        $("#greenwave").mouseenter(function () {
+          var imageUrl = "greenwave.gif";
+          $(".box").css("background-image", "url(" + imageUrl + ")");
+        });
         $("li").mouseleave(function () {
           $(".box").css("background-image", "none");
         });
@@ -253,12 +257,12 @@
 
           <h2>data visualization + journalism</h2>
           <ul>
-            <li id="unbewohnbar">
+            <li id="greenwave">
               <a
                 class="externalLink"
                 target="_blank"
-                href="https://interaktiv.morgenpost.de/klimawandel-hitze-meeresspiegel-wassermangel-stuerme-unbewohnbar/"
-                >Future uninhabitable places</a
+                href="https://www.greenwave.earth/"
+                >The Green Wave</a
               >
             </li>
             <li id="frontex-grants">
@@ -275,6 +279,14 @@
                 target="_blank"
                 href="https://interaktiv.morgenpost.de/co2-budget-pro-kopf-testen-klimawandel/"
                 >CO₂ budget game</a
+              >
+            </li>
+            <li id="unbewohnbar">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/klimawandel-hitze-meeresspiegel-wassermangel-stuerme-unbewohnbar/"
+                >Future uninhabitable places</a
               >
             </li>
             <li id="deportation-union">
