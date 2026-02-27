@@ -172,7 +172,7 @@ li > .externalLink::after {
     position: static;
     width: 100%;
     float: none;
-    overflow-y: visible;
+    /* overflow-y: visible; */
   }
   /* .mobile-only {
     display: block;
@@ -181,6 +181,7 @@ li > .externalLink::after {
   #content {
     padding: 6% 5%;
     width: 90%;
+    min-height: auto;
   }
   body {
     font-size: 54px;
@@ -211,8 +212,5 @@ li > .externalLink::after {
   }
   h2 {
     margin-top: 0.5em;
-  }
-  iframe {
-    height: 1000vh;
   }
 }
