@@ -13,234 +13,73 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
       $(document).ready(function () {
-        // Change background image of a div by clicking on the button
-        $("#tacticaltech-annual-report").mouseenter(function () {
-          var imageUrl = "tacticaltech-annual-report.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#altona").mouseenter(function () {
-          var imageUrl = "altona.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#algae").mouseenter(function () {
-          var imageUrl = "https://idaflik.github.io/powered-by-algae/02.gif";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#data-clocks").mouseenter(function () {
-          var imageUrl = "data-clocks.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#coffee-animation").mouseenter(function () {
-          var imageUrl = "coffee-animation.gif";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#coffee-poster").mouseenter(function () {
-          var imageUrl = "coffee-poster.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#kinderkisten").mouseenter(function () {
-          var imageUrl = "kinderkisten.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#tacticaltechorg").mouseenter(function () {
-          var imageUrl = "tacticaltechorg.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#kcmm").mouseenter(function () {
-          var imageUrl = "kcmm.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#invision").mouseenter(function () {
-          var imageUrl = "invision.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#dna").mouseenter(function () {
-          var imageUrl = "dna.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#swift").mouseenter(function () {
-          var imageUrl = "swift.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#media-power").mouseenter(function () {
-          var imageUrl = "media-power.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#almost-complete").mouseenter(function () {
-          var imageUrl = "almost-complete.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
+        // Array mapping div IDs to their image URLs
+        var images = {
+          "tacticaltech-annual-report": "img/tacticaltech-annual-report.png",
+          altona: "img/altona.png",
+          algae: "https://idaflik.github.io/powered-by-algae/02.gif",
+          "data-clocks": "img/data-clocks.png",
+          "coffee-animation": "img/coffee-animation.gif",
+          "coffee-poster": "img/coffee-poster.png",
+          kinderkisten: "img/kinderkisten.png",
+          tacticaltechorg: "img/tacticaltechorg.png",
+          kcmm: "img/kcmm.png",
+          invision: "img/invision.png",
+          dna: "img/dna.png",
+          swift: "img/swift.png",
+          "media-power": "img/media-power.png",
+          "almost-complete": "img/almost-complete.png",
+          horoscope: "img/horoscope.png",
+          its: "img/its.png",
+          ida: "img/ida.png",
+          "rechter-terror": "img/rechter-terror.png",
+          SAR: "img/SAR.png",
+          alumni: "img/alumni.png",
+          lintotten: "img/lintotten.png",
+          algae2: "img/algae.jpg",
+          "ost-west": "img/ost-west.png",
+          "biden-trump": "img/biden-trump.png",
+          gerrymandering: "img/gerrymandering.png",
+          collages: "img/right-to-record.png",
+          lino: "img/lino.png",
+          "excess-deaths": "img/excess-deaths.png",
+          "kidscourage-web": "img/kidscourage-web.png",
+          rc3: "img/rc3.png",
+          gendergap: "img/gendergap.png",
+          fukushima: "img/fukushima.png",
+          wald: "img/wald.png",
+          visas: "img/visas.png",
+          merkel: "img/merkel.png",
+          elections: "img/elections.png",
+          transitions: "img/transitions.png",
+          "transitions-website": "img/transitions-website.png",
+          bundestag: "img/bundestag.png",
+          unbewohnbar: "img/unbewohnbar.png",
+          "9euro": "img/9euro.png",
+          "climate-stripes": "img/climate-stripes.png",
+          inflation: "img/inflation.png",
+          co2blocks: "img/co2blocks.jpg",
+          "deportation-union": "img/deportation-union.png",
+          "sis-denial": "img/sis-denial.jpg",
+          wealth: "img/wealth_map_2.png",
+          wetter: "img/wetter.png",
+          "just-transition": "img/just-transition.png",
+          "recycling-gap": "img/recycling-gap.png",
+          knicker1: "img/knicker1.png",
+          "ap-scrapbook": "img/ap-scrapbook.png",
+          sketches: "img/sketches.png",
+          illustrations: "img/illustrations.png",
+          "frontex-grants": "img/frontex-grants.gif",
+          greenwave: "img/greenwave.gif",
+          "europol-network": "img/europol.png",
+        };
+
+        $.each(images, function (id, imageUrl) {
+          $("#" + id).mouseenter(function () {
+            $(".box").css("background-image", "url(" + imageUrl + ")");
+          });
         });
 
-        $("#horoscope").mouseenter(function () {
-          var imageUrl = "horoscope.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#its").mouseenter(function () {
-          var imageUrl = "its.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#ida").mouseenter(function () {
-          var imageUrl = "ida.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#rechter-terror").mouseenter(function () {
-          var imageUrl = "rechter-terror.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#SAR").mouseenter(function () {
-          var imageUrl = "SAR.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#alumni").mouseenter(function () {
-          var imageUrl = "alumni.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#lintotten").mouseenter(function () {
-          var imageUrl = "lintotten.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#algae2").mouseenter(function () {
-          var imageUrl = "algae.jpg";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#ost-west").mouseenter(function () {
-          var imageUrl = "ost-west.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#biden-trump").mouseenter(function () {
-          var imageUrl = "biden-trump.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#gerrymandering").mouseenter(function () {
-          var imageUrl = "gerrymandering.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#collages").mouseenter(function () {
-          var imageUrl = "right-to-record.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#lino").mouseenter(function () {
-          var imageUrl = "lino.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#excess-deaths").mouseenter(function () {
-          var imageUrl = "excess-deaths.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-
-        $("#kidscourage-web").mouseenter(function () {
-          var imageUrl = "kidscourage-web.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#rc3").mouseenter(function () {
-          var imageUrl = "rc3.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#gendergap").mouseenter(function () {
-          var imageUrl = "gendergap.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#fukushima").mouseenter(function () {
-          var imageUrl = "fukushima.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#wald").mouseenter(function () {
-          var imageUrl = "wald.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#visas").mouseenter(function () {
-          var imageUrl = "visas.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#merkel").mouseenter(function () {
-          var imageUrl = "merkel.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#elections").mouseenter(function () {
-          var imageUrl = "elections.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#transitions").mouseenter(function () {
-          var imageUrl = "transitions.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#transitions-website").mouseenter(function () {
-          var imageUrl = "transitions-website.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#bundestag").mouseenter(function () {
-          var imageUrl = "bundestag.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#unbewohnbar").mouseenter(function () {
-          var imageUrl = "unbewohnbar.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#9euro").mouseenter(function () {
-          var imageUrl = "9euro.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#climate-stripes").mouseenter(function () {
-          var imageUrl = "climate-stripes.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-
-        $("#inflation").mouseenter(function () {
-          var imageUrl = "inflation.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#co2blocks").mouseenter(function () {
-          var imageUrl = "co2blocks.jpg";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#deportation-union").mouseenter(function () {
-          var imageUrl = "deportation-union.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#sis-denial").mouseenter(function () {
-          var imageUrl = "sis-denial.jpg";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#wealth").mouseenter(function () {
-          var imageUrl = "wealth_map_2.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#wetter").mouseenter(function () {
-          var imageUrl = "wetter.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#just-transition").mouseenter(function () {
-          var imageUrl = "just-transition.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#recycling-gap").mouseenter(function () {
-          var imageUrl = "recycling-gap.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#knicker1").mouseenter(function () {
-          var imageUrl = "knicker1.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#ap-scrapbook").mouseenter(function () {
-          var imageUrl = "ap-scrapbook.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#sketches").mouseenter(function () {
-          var imageUrl = "sketches.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#illustrations").mouseenter(function () {
-          var imageUrl = "illustrations.png";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#frontex-grants").mouseenter(function () {
-          var imageUrl = "frontex-grants.gif";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
-        $("#greenwave").mouseenter(function () {
-          var imageUrl = "greenwave.gif";
-          $(".box").css("background-image", "url(" + imageUrl + ")");
-        });
         $("li").mouseleave(function () {
           $(".box").css("background-image", "none");
         });
@@ -289,6 +128,14 @@
                 >Future uninhabitable places</a
               >
             </li>
+            <li id="europol-network">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://www.statewatch.org/analyses/2025/behind-closed-doors-europol-s-opaque-relations-with-tech-companies/"
+                >Europol and Tech Companies</a
+              >
+            </li>
             <li id="deportation-union">
               <a
                 class="externalLink"
@@ -297,16 +144,21 @@
                 >Deportation Union</a
               >
             </li>
-            <li id="sis-denial">
+            <li id="9euro">
               <a
                 class="externalLink"
                 target="_blank"
-                href="https://www.statewatch.org/analyses/2025/italy-the-end-of-the-systematic-denial-of-data-protection-rights/"
-                >Denial of data protection rights</a
+                href="https://interaktiv.waz.de/9-Euro-Ticket-Bahn-Reiseziel-Karte-Streckenplaner-ab-NRW/"
+                >9-Euro ticket routes</a
               >
             </li>
-            <li id="knicker1">
-              <a href="./knicker1/index.html">Drought and European rivers</a>
+            <li id="gendergap">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/frauentag-weltfrauentag-tag-der-frau-internationaler-frauen-kampf-tag-2021/"
+                >Inequality in numbers</a
+              >
             </li>
             <li id="wealth">
               <a
@@ -316,20 +168,28 @@
                 >Wealth distribution in Germany</a
               >
             </li>
+            <li id="merkel">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/angela-merkel-in-zahlen-bundestagswahl-2021/"
+                >Die Ära Merkel in Zahlen</a
+              >
+            </li>
+            <li id="ost-west">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.waz.de/deutschland-teilen-deutsche-einheit-wiedervereinigung/"
+                >Ost-West? Nord-Süd? Oder ganz anders?</a
+              >
+            </li>
             <li id="recycling-gap">
               <a
                 class="externalLink"
                 target="_blank"
                 href="https://interaktiv.morgenpost.de/kunststoff-recycling-luecke-verpackung/"
                 >How much companies really recycle</a
-              >
-            </li>
-            <li id="9euro">
-              <a
-                class="externalLink"
-                target="_blank"
-                href="https://interaktiv.waz.de/9-Euro-Ticket-Bahn-Reiseziel-Karte-Streckenplaner-ab-NRW/"
-                >9-Euro ticket routes</a
               >
             </li>
             <!-- <li id="wetter">
@@ -348,22 +208,18 @@
                 >Whom inflation hits hardest</a
               >
             </li>
-            <li id="gendergap">
+            <li id="sis-denial">
               <a
                 class="externalLink"
                 target="_blank"
-                href="https://interaktiv.morgenpost.de/frauentag-weltfrauentag-tag-der-frau-internationaler-frauen-kampf-tag-2021/"
-                >Inequality in numbers</a
+                href="https://www.statewatch.org/analyses/2025/italy-the-end-of-the-systematic-denial-of-data-protection-rights/"
+                >Denial of data protection rights</a
               >
             </li>
-            <li id="merkel">
-              <a
-                class="externalLink"
-                target="_blank"
-                href="https://interaktiv.morgenpost.de/angela-merkel-in-zahlen-bundestagswahl-2021/"
-                >Die Ära Merkel in Zahlen</a
-              >
+            <li id="knicker1">
+              <a href="./knicker1/index.html">Drought and European rivers</a>
             </li>
+
             <li id="climate-stripes">
               <a
                 class="externalLink"
@@ -380,14 +236,7 @@
                 >The German parliament and representation</a
               >
             </li>
-            <li id="ost-west">
-              <a
-                class="externalLink"
-                target="_blank"
-                href="https://interaktiv.waz.de/deutschland-teilen-deutsche-einheit-wiedervereinigung/"
-                >Ost-West? Nord-Süd? Oder ganz anders?</a
-              >
-            </li>
+
             <li id="fukushima">
               <a
                 class="externalLink"
@@ -607,15 +456,15 @@
 
           <h2>illustration</h2>
           <ul>
+            <li id="sketches">
+              <a href="./sketches/index.html">Sketchbook</a>
+            </li>
             <li id="illustrations">
               <a href="./illustrations/index.html">Illustrations</a>
             </li>
             <li id="lino"><a href="./lino/index.html">Prints</a></li>
             <li id="collages">
               <a href="./collages/index.html">Collages</a>
-            </li>
-            <li id="sketches">
-              <a href="./sketches/index.html">Sketchbook</a>
             </li>
           </ul>
           <hr />
@@ -635,11 +484,11 @@
             I work across the fields of data journalism, design and science.
           </p>
           <p>
-            I like to try and make complex topics more tangible and easy to
-            engage with. I code and design, do research, file requests or scrape
-            data, and make data visualizations. I work freelance and I'm part of
-            the Remote Sensing Centre for Earth System Research at Uni Leipzig.
-            Sometimes I
+            I try to make complex topics more tangible and easy to engage with.
+            I code and design, do research, build things, file requests or
+            scrape data, and make data visualizations. I work freelance and I'm
+            part of the Remote Sensing Centre for Earth System Research at Uni
+            Leipzig. Sometimes I
             <a
               href="https://infovis.fh-potsdam.de/mappingextractivism/"
               target="_blank"
@@ -656,14 +505,6 @@
         <hr />
 
         <h2><a href="impressum.html">privacy & imprint</a></h2>
-
-        <div style="display: none">
-          <img src="one.png" alt="" height="1" width="1" />
-          <img src="two.png" alt="" height="1" width="1" />
-          <img src="three.png" alt="" height="1" width="1" />
-          <img src="b.jpg" alt="" height="1" width="1" />
-          <img src="play.png" alt="" height="1" width="1" />
-        </div>
       </div>
       <div class="box"></div>
     </div>
