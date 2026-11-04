@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+    <link rel="prefetch" href="greenwave.gif" />
+    <link rel="prerender" href="greenwave.gif" />
+
+    <title>portfolio — ida flik</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Array mapping div IDs to their image URLs
+        var images = {
+          "tacticaltech-annual-report": "img/tacticaltech-annual-report.png",
+          altona: "img/altona.png",
+          algae: "https://idaflik.github.io/powered-by-algae/02.gif",
+          "data-clocks": "img/data-clocks.png",
+          "coffee-animation": "img/coffee-animation.gif",
+          "coffee-poster": "img/coffee-poster.png",
+          kinderkisten: "img/kinderkisten.png",
+          tacticaltechorg: "img/tacticaltechorg.png",
+          kcmm: "img/kcmm.png",
+          invision: "img/invision.png",
+          dna: "img/dna.png",
+          swift: "img/swift.png",
+          "media-power": "img/media-power.png",
+          "almost-complete": "img/almost-complete.png",
+          horoscope: "img/horoscope.png",
+          its: "img/its.png",
+          ida: "img/ida.png",
+          "rechter-terror": "img/rechter-terror.png",
+          SAR: "img/SAR.png",
+          alumni: "img/alumni.png",
+          lintotten: "img/lintotten.png",
+          algae2: "img/algae.jpg",
+          "ost-west": "img/ost-west.png",
+          "biden-trump": "img/biden-trump.png",
+          gerrymandering: "img/gerrymandering.png",
+          collages: "img/right-to-record.png",
+          lino: "img/lino.png",
+          "excess-deaths": "img/excess-deaths.png",
+          "kidscourage-web": "img/kidscourage-web.png",
+          rc3: "img/rc3.png",
+          gendergap: "img/gendergap.png",
+          fukushima: "img/fukushima.png",
+          wald: "img/wald.png",
+          visas: "img/visas.png",
+          merkel: "img/merkel.png",
+          elections: "img/elections.png",
+          transitions: "img/transitions.png",
+          "transitions-website": "img/transitions-website.png",
+          bundestag: "img/bundestag.png",
+          unbewohnbar: "img/unbewohnbar.png",
+          "9euro": "img/9euro.png",
+          "climate-stripes": "img/climate-stripes.png",
+          inflation: "img/inflation.png",
+          co2blocks: "img/co2blocks.jpg",
+          "deportation-union": "img/deportation-union.png",
+          "sis-denial": "img/sis-denial.jpg",
+          wealth: "img/wealth_map_2.png",
+          wetter: "img/wetter.png",
+          "just-transition": "img/just-transition.png",
+          "recycling-gap": "img/recycling-gap.png",
+          knicker1: "img/knicker1.png",
+          "ap-scrapbook": "img/ap-scrapbook.png",
+          sketches: "img/sketches.png",
+          illustrations: "img/illustrations.png",
+          "frontex-grants": "img/frontex-grants.gif",
+          greenwave: "img/greenwave.gif",
+          greening: "img/greening.gif",
+          fics: "img/fics.gif",
+          "europol-network": "img/europol.png",
+          uk_timeline: "img/uk_timeline.gif",
+          cellebrite: "img/cellebrite.png",
+        };
+
+        $.each(images, function (id, imageUrl) {
+          $("#" + id).mouseenter(function () {
+            $(".box").css("background-image", "url(" + imageUrl + ")");
+          });
+        });
+
+        $("li").mouseleave(function () {
+          $(".box").css("background-image", "none");
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <div id="content">
+        <div>
+          <a href="index.html">portfolio — ida flik </a>
+          <hr />
+
+          <h2>data visualization + journalism</h2>
+          <hr />
+          <h2>all projects</h2>
+          <ul>
+            <li id="greenwave">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://www.greenwave.earth/"
+                >The Green Wave</a
+              >
+            </li>
+            <li id="greening">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://www.greenwave.earth/greening.html"
+                >Global Greening</a
+              >
+            </li>
+            <li id="fics">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://nois.statewatch.org/"
+                >Networks of In/Security</a
+              >
+            </li>
+            <li id="cellebrite">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://statewatch.org/news/2026/november/eu-and-uk-spent-millions-on-israeli-phone-cracking-tech-surveillance-despite-risks/"
+                >Israeli phone hacking software & the EU</a
+              >
+            </li>
+            <li id="uk_timeline">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://statewatch.org/analyses/2026/the-decline-of-rights-under-uk-s-labour-2024-2026/"
+                >Decline of civil liberties in the UK</a
+              >
+            </li>
+            <li id="europol-network">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://www.statewatch.org/analyses/2025/behind-closed-doors-europol-s-opaque-relations-with-tech-companies/"
+                >Europol and Tech Companies</a
+              >
+            </li>
+            <li id="co2blocks">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/co2-budget-pro-kopf-testen-klimawandel/"
+                >CO₂ Budget Game</a
+              >
+            </li>
+            <li id="unbewohnbar">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/klimawandel-hitze-meeresspiegel-wassermangel-stuerme-unbewohnbar/"
+                >Future Uninhabitable Places</a
+              >
+            </li>
+            <li id="gendergap">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/frauentag-weltfrauentag-tag-der-frau-internationaler-frauen-kampf-tag-2021/"
+                >Inequality in Numbers</a
+              >
+            </li>
+            <li id="frontex-grants">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://www.statewatch.org/analyses/2025/2-billion-in-15-years-how-frontex-finances-fortress-europe/"
+                >How Frontex Finances Fortress Europe</a
+              >
+            </li>
+
+            <li id="9euro">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.waz.de/9-Euro-Ticket-Bahn-Reiseziel-Karte-Streckenplaner-ab-NRW/"
+                >9-Euro Ticket Routes</a
+              >
+            </li>
+
+            <li id="wealth">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/vermoegen-deutschland-karte-vergleich/"
+                >Wealth Distribution in Germany</a
+              >
+            </li>
+            <li id="merkel">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/angela-merkel-in-zahlen-bundestagswahl-2021/"
+                >Die Ära Merkel in Zahlen</a
+              >
+            </li>
+            <li id="deportation-union">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://www.statewatch.org/analyses/2025/frontex-and-deportation-charter-flights-2006-2024/"
+                >Deportation Union</a
+              >
+            </li>
+            <li id="ost-west">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.waz.de/deutschland-teilen-deutsche-einheit-wiedervereinigung/"
+                >Ost-West? Nord-Süd? Oder ganz anders?</a
+              >
+            </li>
+            <li id="recycling-gap">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/kunststoff-recycling-luecke-verpackung/"
+                >How much companies really recycle</a
+              >
+            </li>
+            <!-- <li id="wetter">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.waz.de/wetter-klima-vergleich-heute-klimawandel/"
+                >Is this weather normal?</a
+              >
+            </li> -->
+            <li id="inflation">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/inflation-rechner-einkommen-preise/"
+                >Whom inflation hits hardest</a
+              >
+            </li>
+            <li id="sis-denial">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://www.statewatch.org/analyses/2025/italy-the-end-of-the-systematic-denial-of-data-protection-rights/"
+                >Denial of data protection rights</a
+              >
+            </li>
+            <li id="knicker1">
+              <a href="./knicker1/index.html">Drought and European rivers</a>
+            </li>
+
+            <li id="climate-stripes">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/hitze-faecher-klimastreifen-staedte-deutschland/"
+                >Local climate stripes (and how to fold a fan)</a
+              >
+            </li>
+            <li id="bundestag">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.waz.de/neuer-bundestag-2021-bundestagswahl-abgeordnete-parlament/"
+                >The German parliament and representation</a
+              >
+            </li>
+
+            <li id="fukushima">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.morgenpost.de/fukushima-atomkraftwerke-atomausstieg-deutschland/"
+                >10 years after Fukushima</a
+              >
+            </li>
+            <li id="elections">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.waz.de/bundestagswahl-2021-umfragen-ergebnisse-wahlkarte/"
+                >Election Dashboards</a
+              >
+            </li>
+            <li id="visas">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://idaflik.github.io/freedom-of-movement"
+                >Global distribution of mobility rights</a
+              >
+            </li>
+            <li id="tacticaltech-annual-report">
+              <a href="./tacticaltech-annual-report/index.html"
+                >A Year in Data</a
+              >
+            </li>
+            <li id="wald">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.nrz.de/waldsterben-klimawandel-borkenkaefer-hitze-duerre-co2-rechner/"
+                >Forests and climate change</a
+              >
+            </li>
+            <li id="excess-deaths">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.waz.de/corona-uebersterblichkeit-sterberate-deutschland/"
+                >Covid and Excess Deaths 2020</a
+              >
+            </li>
+            <li id="gerrymandering">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.waz.de/us-wahl-2020-gerrymandering/"
+                >US elections: Gerrymandering (DE</a
+              >
+              /
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.waz.de/us-wahl-2020-gerrymandering-english/"
+                >EN</a
+              >)
+            </li>
+            <li id="biden-trump">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.nrz.de/us-wahl-2020-donald-trump-joe-biden-wahlsystem/"
+                >US elections: Winner takes all (DE</a
+              >
+              /
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://interaktiv.nrz.de/us-election-2020-donald-trump-joe-biden-electors-english/"
+                >EN</a
+              >)
+            </li>
+            <li id="SAR">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://idaflik.github.io/SAR/"
+                >Civil Sea Rescuing in the Mediterranean</a
+              >
+            </li>
+            <li id="lintotten">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://idaflik.github.io/lintotten/"
+                >Renovations and Rent Increases</a
+              >
+            </li>
+            <li id="rechter-terror">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://idaflik.github.io/rechter-terror/"
+                >Right-wing terrorism in Germany</a
+              >
+            </li>
+            <li id="alumni">
+              <a
+                class="externalLink"
+                target="_blank"
+                href="https://idaflik.github.io/MIJ/"
+                >Interviewing Journalism Alumni</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
